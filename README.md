@@ -5,5 +5,5 @@ VPPMap library simplifies the creation and management of a MKMapView. Features:
  - Automatic annotation clustering.
  - Easy management of pins dropped by user.
 
-For further information check out 
+For full documentation check out 
 http://vicpenap.github.com/VPPMap

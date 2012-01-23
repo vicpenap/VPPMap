@@ -1,0 +1,7 @@
+.DS_Store
+VPPMap.xcodeproj/xcuserdata/
+VPPMap.xcodeproj/project.xcworkspace/xcuserdata/
+build/
+VPPMap.xcodeproj/*.mode1v3
+VPPMap.xcodeproj/*.pbxuser
+

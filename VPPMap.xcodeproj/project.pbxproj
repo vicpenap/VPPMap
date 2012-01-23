@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57DE4F5314CDB9D100B2D86B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE4F5214CDB9D100B2D86B /* UIKit.framework */; };
+		57DE4F5514CDB9D100B2D86B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE4F5414CDB9D100B2D86B /* Foundation.framework */; };
+		57DE4F5714CDB9D100B2D86B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE4F5614CDB9D100B2D86B /* CoreGraphics.framework */; };
+		57DE4F5D14CDB9D100B2D86B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57DE4F5B14CDB9D100B2D86B /* InfoPlist.strings */; };
+		57DE4F5F14CDB9D100B2D86B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE4F5E14CDB9D100B2D86B /* main.m */; };
+		57DE4F6314CDB9D100B2D86B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE4F6214CDB9D100B2D86B /* AppDelegate.m */; };
+		57DE4FA414CDBC5200B2D86B /* MapExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57DE4FA214CDBC5200B2D86B /* MapExample.xib */; };
+		57DE4FA514CDBC5200B2D86B /* MapExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE4FA314CDBC5200B2D86B /* MapExample.m */; };
+		57DE4FB514CDBCBF00B2D86B /* VPPMapCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE4FAA14CDBCBF00B2D86B /* VPPMapCluster.m */; };
+		57DE4FB614CDBCBF00B2D86B /* VPPMapClusterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE4FAC14CDBCBF00B2D86B /* VPPMapClusterHelper.m */; };
+		57DE4FB714CDBCBF00B2D86B /* VPPMapClusterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE4FAE14CDBCBF00B2D86B /* VPPMapClusterView.m */; };
+		57DE4FB914CDBCBF00B2D86B /* VPPMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE4FB314CDBCBF00B2D86B /* VPPMapHelper.m */; };
+		57DE4FBC14CDBD3B00B2D86B /* MapAnnotationExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE4FBB14CDBD3B00B2D86B /* MapAnnotationExample.m */; };
+		57DE4FC414CDBF4900B2D86B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE4FBD14CDBDE300B2D86B /* MapKit.framework */; };
+		57DE4FC614CDBF5800B2D86B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE4FC514CDBF5800B2D86B /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		57DE4F4E14CDB9D100B2D86B /* VPPMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPPMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DE4F5214CDB9D100B2D86B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		57DE4F5414CDB9D100B2D86B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		57DE4F5614CDB9D100B2D86B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		57DE4F5A14CDB9D100B2D86B /* VPPMap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VPPMap-Info.plist"; sourceTree = "<group>"; };
+		57DE4F5C14CDB9D100B2D86B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		57DE4F5E14CDB9D100B2D86B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57DE4F6014CDB9D100B2D86B /* VPPMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VPPMap-Prefix.pch"; sourceTree = "<group>"; };
+		57DE4F6114CDB9D100B2D86B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		57DE4F6214CDB9D100B2D86B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		57DE4FA114CDBC5200B2D86B /* MapExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapExample.h; sourceTree = "<group>"; };
+		57DE4FA214CDBC5200B2D86B /* MapExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapExample.xib; sourceTree = "<group>"; };
+		57DE4FA314CDBC5200B2D86B /* MapExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapExample.m; sourceTree = "<group>"; };
+		57DE4FA914CDBCBF00B2D86B /* VPPMapCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapCluster.h; sourceTree = "<group>"; };
+		57DE4FAA14CDBCBF00B2D86B /* VPPMapCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapCluster.m; sourceTree = "<group>"; };
+		57DE4FAB14CDBCBF00B2D86B /* VPPMapClusterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapClusterHelper.h; sourceTree = "<group>"; };
+		57DE4FAC14CDBCBF00B2D86B /* VPPMapClusterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapClusterHelper.m; sourceTree = "<group>"; };
+		57DE4FAD14CDBCBF00B2D86B /* VPPMapClusterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapClusterView.h; sourceTree = "<group>"; };
+		57DE4FAE14CDBCBF00B2D86B /* VPPMapClusterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapClusterView.m; sourceTree = "<group>"; };
+		57DE4FB114CDBCBF00B2D86B /* VPPMapCustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapCustomAnnotation.h; sourceTree = "<group>"; };
+		57DE4FB214CDBCBF00B2D86B /* VPPMapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapHelper.h; sourceTree = "<group>"; };
+		57DE4FB314CDBCBF00B2D86B /* VPPMapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPPMapHelper.m; sourceTree = "<group>"; };
+		57DE4FB414CDBCBF00B2D86B /* VPPMapHelperDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPPMapHelperDelegate.h; sourceTree = "<group>"; };
+		57DE4FBA14CDBD3B00B2D86B /* MapAnnotationExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationExample.h; sourceTree = "<group>"; };
+		57DE4FBB14CDBD3B00B2D86B /* MapAnnotationExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotationExample.m; sourceTree = "<group>"; };
+		57DE4FBD14CDBDE300B2D86B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		57DE4FC514CDBF5800B2D86B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57DE4F4B14CDB9D100B2D86B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DE4FC614CDBF5800B2D86B /* CoreLocation.framework in Frameworks */,
+				57DE4FC414CDBF4900B2D86B /* MapKit.framework in Frameworks */,
+				57DE4F5314CDB9D100B2D86B /* UIKit.framework in Frameworks */,
+				57DE4F5514CDB9D100B2D86B /* Foundation.framework in Frameworks */,
+				57DE4F5714CDB9D100B2D86B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57DE4F4314CDB9D100B2D86B = {
+			isa = PBXGroup;
+			children = (
+				57DE4F5814CDB9D100B2D86B /* VPPMap */,
+				57DE4F5114CDB9D100B2D86B /* Frameworks */,
+				57DE4F4F14CDB9D100B2D86B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57DE4F4F14CDB9D100B2D86B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57DE4F4E14CDB9D100B2D86B /* VPPMap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57DE4F5114CDB9D100B2D86B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57DE4FC514CDBF5800B2D86B /* CoreLocation.framework */,
+				57DE4FBD14CDBDE300B2D86B /* MapKit.framework */,
+				57DE4F5214CDB9D100B2D86B /* UIKit.framework */,
+				57DE4F5414CDB9D100B2D86B /* Foundation.framework */,
+				57DE4F5614CDB9D100B2D86B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57DE4F5814CDB9D100B2D86B /* VPPMap */ = {
+			isa = PBXGroup;
+			children = (
+				57DE4FA614CDBCBF00B2D86B /* Libraries */,
+				57DE4F6114CDB9D100B2D86B /* AppDelegate.h */,
+				57DE4F6214CDB9D100B2D86B /* AppDelegate.m */,
+				57DE4FA114CDBC5200B2D86B /* MapExample.h */,
+				57DE4FA314CDBC5200B2D86B /* MapExample.m */,
+				57DE4FA214CDBC5200B2D86B /* MapExample.xib */,
+				57DE4FBA14CDBD3B00B2D86B /* MapAnnotationExample.h */,
+				57DE4FBB14CDBD3B00B2D86B /* MapAnnotationExample.m */,
+				57DE4F5914CDB9D100B2D86B /* Supporting Files */,
+			);
+			path = VPPMap;
+			sourceTree = "<group>";
+		};
+		57DE4F5914CDB9D100B2D86B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57DE4F5A14CDB9D100B2D86B /* VPPMap-Info.plist */,
+				57DE4F5B14CDB9D100B2D86B /* InfoPlist.strings */,
+				57DE4F5E14CDB9D100B2D86B /* main.m */,
+				57DE4F6014CDB9D100B2D86B /* VPPMap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57DE4FA614CDBCBF00B2D86B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				57DE4FA714CDBCBF00B2D86B /* VPPMap */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		57DE4FA714CDBCBF00B2D86B /* VPPMap */ = {
+			isa = PBXGroup;
+			children = (
+				57DE4FA814CDBCBF00B2D86B /* Clustering */,
+				57DE4FB114CDBCBF00B2D86B /* VPPMapCustomAnnotation.h */,
+				57DE4FB214CDBCBF00B2D86B /* VPPMapHelper.h */,
+				57DE4FB314CDBCBF00B2D86B /* VPPMapHelper.m */,
+				57DE4FB414CDBCBF00B2D86B /* VPPMapHelperDelegate.h */,
+			);
+			path = VPPMap;
+			sourceTree = "<group>";
+		};
+		57DE4FA814CDBCBF00B2D86B /* Clustering */ = {
+			isa = PBXGroup;
+			children = (
+				57DE4FA914CDBCBF00B2D86B /* VPPMapCluster.h */,
+				57DE4FAA14CDBCBF00B2D86B /* VPPMapCluster.m */,
+				57DE4FAB14CDBCBF00B2D86B /* VPPMapClusterHelper.h */,
+				57DE4FAC14CDBCBF00B2D86B /* VPPMapClusterHelper.m */,
+				57DE4FAD14CDBCBF00B2D86B /* VPPMapClusterView.h */,
+				57DE4FAE14CDBCBF00B2D86B /* VPPMapClusterView.m */,
+			);
+			path = Clustering;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57DE4F4D14CDB9D100B2D86B /* VPPMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57DE4F6C14CDB9D100B2D86B /* Build configuration list for PBXNativeTarget "VPPMap" */;
+			buildPhases = (
+				57DE4F4A14CDB9D100B2D86B /* Sources */,
+				57DE4F4B14CDB9D100B2D86B /* Frameworks */,
+				57DE4F4C14CDB9D100B2D86B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VPPMap;
+			productName = VPPMap;
+			productReference = 57DE4F4E14CDB9D100B2D86B /* VPPMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57DE4F4514CDB9D100B2D86B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 57DE4F4814CDB9D100B2D86B /* Build configuration list for PBXProject "VPPMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 57DE4F4314CDB9D100B2D86B;
+			productRefGroup = 57DE4F4F14CDB9D100B2D86B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57DE4F4D14CDB9D100B2D86B /* VPPMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57DE4F4C14CDB9D100B2D86B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DE4F5D14CDB9D100B2D86B /* InfoPlist.strings in Resources */,
+				57DE4FA414CDBC5200B2D86B /* MapExample.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57DE4F4A14CDB9D100B2D86B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DE4F5F14CDB9D100B2D86B /* main.m in Sources */,
+				57DE4F6314CDB9D100B2D86B /* AppDelegate.m in Sources */,
+				57DE4FA514CDBC5200B2D86B /* MapExample.m in Sources */,
+				57DE4FB514CDBCBF00B2D86B /* VPPMapCluster.m in Sources */,
+				57DE4FB614CDBCBF00B2D86B /* VPPMapClusterHelper.m in Sources */,
+				57DE4FB714CDBCBF00B2D86B /* VPPMapClusterView.m in Sources */,
+				57DE4FB914CDBCBF00B2D86B /* VPPMapHelper.m in Sources */,
+				57DE4FBC14CDBD3B00B2D86B /* MapAnnotationExample.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		57DE4F5B14CDB9D100B2D86B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57DE4F5C14CDB9D100B2D86B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57DE4F6A14CDB9D100B2D86B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		57DE4F6B14CDB9D100B2D86B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57DE4F6D14CDB9D100B2D86B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VPPMap/VPPMap-Prefix.pch";
+				INFOPLIST_FILE = "VPPMap/VPPMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		57DE4F6E14CDB9D100B2D86B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VPPMap/VPPMap-Prefix.pch";
+				INFOPLIST_FILE = "VPPMap/VPPMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57DE4F4814CDB9D100B2D86B /* Build configuration list for PBXProject "VPPMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57DE4F6A14CDB9D100B2D86B /* Debug */,
+				57DE4F6B14CDB9D100B2D86B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57DE4F6C14CDB9D100B2D86B /* Build configuration list for PBXNativeTarget "VPPMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57DE4F6D14CDB9D100B2D86B /* Debug */,
+				57DE4F6E14CDB9D100B2D86B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57DE4F4514CDB9D100B2D86B /* Project object */;
+}

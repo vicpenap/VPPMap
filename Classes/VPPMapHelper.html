@@ -1,0 +1,1080 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>VPPMapHelper Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 752)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">VPPMap </a></h1>
+				<a id="developerHome" href="../index.html">Víctor Pena Placer</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">VPPMapHelper Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/allowMultipleUserPins">&nbsp;&nbsp;&nbsp;&nbsp;allowMultipleUserPins</option>
+	
+	<option value="//api/name/centersOnUserLocation">&nbsp;&nbsp;&nbsp;&nbsp;centersOnUserLocation</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/distanceBetweenPins">&nbsp;&nbsp;&nbsp;&nbsp;distanceBetweenPins</option>
+	
+	<option value="//api/name/mapRegionSpan">&nbsp;&nbsp;&nbsp;&nbsp;mapRegionSpan</option>
+	
+	<option value="//api/name/mapView">&nbsp;&nbsp;&nbsp;&nbsp;mapView</option>
+	
+	<option value="//api/name/pinAnnotationColor">&nbsp;&nbsp;&nbsp;&nbsp;pinAnnotationColor</option>
+	
+	<option value="//api/name/pinDroppedByUserClass">&nbsp;&nbsp;&nbsp;&nbsp;pinDroppedByUserClass</option>
+	
+	<option value="//api/name/shouldClusterPins">&nbsp;&nbsp;&nbsp;&nbsp;shouldClusterPins</option>
+	
+	<option value="//api/name/showsDisclosureButton">&nbsp;&nbsp;&nbsp;&nbsp;showsDisclosureButton</option>
+	
+	<option value="//api/name/userCanDropPin">&nbsp;&nbsp;&nbsp;&nbsp;userCanDropPin</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;+ VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addMapAnnotations:">&nbsp;&nbsp;&nbsp;&nbsp;- addMapAnnotations:</option>
+	
+	<option value="//api/name/centerMap">&nbsp;&nbsp;&nbsp;&nbsp;- centerMap</option>
+	
+	<option value="//api/name/setMapAnnotations:">&nbsp;&nbsp;&nbsp;&nbsp;- setMapAnnotations:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializating a Map Helper">Initializating a Map Helper</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accesing the map view">Accesing the map view</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accesing the delegate">Accesing the delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Map helper properties">Map helper properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Default annotation properties">Default annotation properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing annotations">Managing annotations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Centering the map">Centering the map</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowMultipleUserPins">allowMultipleUserPins</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centersOnUserLocation">centersOnUserLocation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/distanceBetweenPins">distanceBetweenPins</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapRegionSpan">mapRegionSpan</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mapView">mapView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pinAnnotationColor">pinAnnotationColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pinDroppedByUserClass">pinDroppedByUserClass</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldClusterPins">shouldClusterPins</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showsDisclosureButton">showsDisclosureButton</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userCanDropPin">userCanDropPin</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:">VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addMapAnnotations:">addMapAnnotations:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centerMap">centerMap</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMapAnnotations:">setMapAnnotations:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="VPPMapHelper Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">VPPMapHelper Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">MKMapViewDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">VPPMapHelper.h<br />VPPMapHelper.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This library simplifies the creation and management of a MKMapView. Features:</p>
+
+<ul>
+<li>Automatic annotations management with their views and callouts.</li>
+<li>Map region centering based on the current visible annotations.</li>
+<li>Automatic annotation clustering.</li>
+<li>Easy management of pins dropped by user.</li>
+</ul>
+
+
+<p>Using <a href="../Protocols/VPPMapCustomAnnotation.html">VPPMapCustomAnnotation</a> protocol (instead of MKAnnotation protocol)
+would allow a higher annotation customization, although this is optional.</p><div class="warning"><p><strong>Important</strong> This library depends on MapKit framework and
+CoreLocation framework.</p></div>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initializating a Map Helper" name="task_Initializating a Map Helper"></a>
+						<h3 class="subsubtitle task-title">Initializating a Map Helper</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:">+&nbsp;VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:</a></code>
+		<span class="tooltip"><p>Creates and returns a new autoreleased instance with the specified configuration.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accesing the map view" name="task_Accesing the map view"></a>
+						<h3 class="subsubtitle task-title">Accesing the map view</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapView">&nbsp;&nbsp;mapView</a></code>
+		<span class="tooltip"><p>Holds reference to the managed map view</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accesing the delegate" name="task_Accesing the delegate"></a>
+						<h3 class="subsubtitle task-title">Accesing the delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>Holds reference to <a href="../Protocols/VPPMapHelperDelegate.html">VPPMapHelperDelegate</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Map helper properties" name="task_Map helper properties"></a>
+						<h3 class="subsubtitle task-title">Map helper properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userCanDropPin">&nbsp;&nbsp;userCanDropPin</a></code>
+		<span class="tooltip"><p>Sets if user can drop a pin by longpressing the map in any point.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowMultipleUserPins">&nbsp;&nbsp;allowMultipleUserPins</a></code>
+		<span class="tooltip"><p>Sets if user can drop more than one pin by longpressing on the map.
+needs <a href="#//api/name/userCanDropPin">userCanDropPin</a> to be set to YES.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pinDroppedByUserClass">&nbsp;&nbsp;pinDroppedByUserClass</a></code>
+		<span class="tooltip"><p>Holds reference to the pin&rsquo;s class that will be used when user longpresses.
+It must implement MKAnnotation protocol</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldClusterPins">&nbsp;&nbsp;shouldClusterPins</a></code>
+		<span class="tooltip"><p>Indicates if pins should be grouped in clusters.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/distanceBetweenPins">&nbsp;&nbsp;distanceBetweenPins</a></code>
+		<span class="tooltip"><p>Indicates distance between pins to cluster them.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Default annotation properties" name="task_Default annotation properties"></a>
+						<h3 class="subsubtitle task-title">Default annotation properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showsDisclosureButton">&nbsp;&nbsp;showsDisclosureButton</a></code>
+		<span class="tooltip"><p>Indicates if the annotations' view should show a disclosure button.
+This property can be overriden for each annotation by VPPCustomAnnotation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pinAnnotationColor">&nbsp;&nbsp;pinAnnotationColor</a></code>
+		<span class="tooltip"><p>Indicates pins color. Red if none is assigned.
+This property can be overriden for each annotation by VPPCustomAnnotation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing annotations" name="task_Managing annotations"></a>
+						<h3 class="subsubtitle task-title">Managing annotations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMapAnnotations:">&ndash;&nbsp;setMapAnnotations:</a></code>
+		<span class="tooltip"><p>Removes all previous annotations and sets the given ones.
+They must conform to MKAnnotation protocol, or optionally to
+<a href="../Protocols/VPPMapCustomAnnotation.html">VPPMapCustomAnnotation</a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addMapAnnotations:">&ndash;&nbsp;addMapAnnotations:</a></code>
+		<span class="tooltip"><p>Adds more map annotations to the already existing ones. They must
+conform to MKAnnotation protocol, or optionally to <a href="../Protocols/VPPMapCustomAnnotation.html">VPPMapCustomAnnotation</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Centering the map" name="task_Centering the map"></a>
+						<h3 class="subsubtitle task-title">Centering the map</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centersOnUserLocation">&nbsp;&nbsp;centersOnUserLocation</a></code>
+		<span class="tooltip"><p>Indicates whether the map view should be centered on user location or not.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mapRegionSpan">&nbsp;&nbsp;mapRegionSpan</a></code>
+		<span class="tooltip"><p>Indicates the amount of zoom used when centering the map.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centerMap">&ndash;&nbsp;centerMap</a></code>
+		<span class="tooltip"><p>Calcultates the best map&rsquo;s region to be shown and centers the map view to
+fit that region.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allowMultipleUserPins" title="allowMultipleUserPins"></a>
+	<h3 class="subsubtitle method-title">allowMultipleUserPins</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets if user can drop more than one pin by longpressing on the map.
+needs <a href="#//api/name/userCanDropPin">userCanDropPin</a> to be set to YES.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL allowMultipleUserPins</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/centersOnUserLocation" title="centersOnUserLocation"></a>
+	<h3 class="subsubtitle method-title">centersOnUserLocation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates whether the map view should be centered on user location or not.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL centersOnUserLocation</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="#//api/name/mapView">mapView</a>.showsUserLocation property is independent of this one.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Holds reference to <a href="../Protocols/VPPMapHelperDelegate.html">VPPMapHelperDelegate</a></p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id&lt;VPPMapHelperDelegate&gt; delegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/distanceBetweenPins" title="distanceBetweenPins"></a>
+	<h3 class="subsubtitle method-title">distanceBetweenPins</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates distance between pins to cluster them.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float distanceBetweenPins</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapRegionSpan" title="mapRegionSpan"></a>
+	<h3 class="subsubtitle method-title">mapRegionSpan</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates the amount of zoom used when centering the map.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MKCoordinateSpan mapRegionSpan</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mapView" title="mapView"></a>
+	<h3 class="subsubtitle method-title">mapView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Holds reference to the managed map view</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MKMapView *mapView</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pinAnnotationColor" title="pinAnnotationColor"></a>
+	<h3 class="subsubtitle method-title">pinAnnotationColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates pins color. Red if none is assigned.
+This property can be overriden for each annotation by VPPCustomAnnotation.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MKPinAnnotationColor pinAnnotationColor</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pinDroppedByUserClass" title="pinDroppedByUserClass"></a>
+	<h3 class="subsubtitle method-title">pinDroppedByUserClass</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Holds reference to the pin&rsquo;s class that will be used when user longpresses.
+It must implement MKAnnotation protocol</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) Class pinDroppedByUserClass</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldClusterPins" title="shouldClusterPins"></a>
+	<h3 class="subsubtitle method-title">shouldClusterPins</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates if pins should be grouped in clusters.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldClusterPins</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This only applies to those pins added <strong>after</strong> this property has been set to YES
+using the methods <a href="#//api/name/addMapAnnotations:">addMapAnnotations:</a> or <a href="#//api/name/setMapAnnotations:">setMapAnnotations:</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showsDisclosureButton" title="showsDisclosureButton"></a>
+	<h3 class="subsubtitle method-title">showsDisclosureButton</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates if the annotations' view should show a disclosure button.
+This property can be overriden for each annotation by VPPCustomAnnotation.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL showsDisclosureButton</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userCanDropPin" title="userCanDropPin"></a>
+	<h3 class="subsubtitle method-title">userCanDropPin</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets if user can drop a pin by longpressing the map in any point.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL userCanDropPin</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:" title="VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:"></a>
+	<h3 class="subsubtitle method-title">VPPMapHelperForMapView:pinAnnotationColor:centersOnUserLocation:showsDisclosureButton:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a new autoreleased instance with the specified configuration.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (VPPMapHelper *)VPPMapHelperForMapView:(MKMapView *)<em>mapView</em> pinAnnotationColor:(MKPinAnnotationColor)<em>annotationColor</em> centersOnUserLocation:(BOOL)<em>centersOnUserLocation</em> showsDisclosureButton:(BOOL)<em>showsDisclosureButton</em> delegate:(id&lt;VPPMapHelperDelegate&gt;)<em>delegate</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addMapAnnotations:" title="addMapAnnotations:"></a>
+	<h3 class="subsubtitle method-title">addMapAnnotations:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds more map annotations to the already existing ones. They must
+conform to MKAnnotation protocol, or optionally to <a href="../Protocols/VPPMapCustomAnnotation.html">VPPMapCustomAnnotation</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addMapAnnotations:(NSArray *)<em>mapAnnotations</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If <a href="#//api/name/shouldClusterPins">shouldClusterPins</a> is set to YES, given annotations will be automatically
+clustered.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/centerMap" title="centerMap"></a>
+	<h3 class="subsubtitle method-title">centerMap</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Calcultates the best map&rsquo;s region to be shown and centers the map view to
+fit that region.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)centerMap</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If <a href="#//api/name/centersOnUserLocation">centersOnUserLocation</a> is set to YES, <a href="#//api/name/mapView">mapView</a> will be centered on it
+with the <a href="#//api/name/mapRegionSpan">mapRegionSpan</a> indicated.</p>
+
+<p>If <a href="#//api/name/centersOnUserLocation">centersOnUserLocation</a> is set to NO, <a href="#//api/name/mapView">mapView</a> will be centered around the
+current annotations, with the needed span to let all annotations to be shown.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMapAnnotations:" title="setMapAnnotations:"></a>
+	<h3 class="subsubtitle method-title">setMapAnnotations:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes all previous annotations and sets the given ones.
+They must conform to MKAnnotation protocol, or optionally to
+<a href="../Protocols/VPPMapCustomAnnotation.html">VPPMapCustomAnnotation</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setMapAnnotations:(NSArray *)<em>mapAnnotations</em></code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invoking this method will center the map automatically. If you want to
+avoid that feature, remove by hand all the existing annotations and use
+<a href="#//api/name/addMapAnnotations:">addMapAnnotations:</a> instead.</p>
+
+<p>If <a href="#//api/name/shouldClusterPins">shouldClusterPins</a> is set to YES, given annotations will be automatically
+clustered.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VPPMapHelper.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Víctor Pena Placer. All rights reserved. (Last updated: 2012-01-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 752)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

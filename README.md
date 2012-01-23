@@ -6,4 +6,4 @@ VPPMap library simplifies the creation and management of a MKMapView. Features:
  - Easy management of pins dropped by user.
 
 For further information check out 
-http://vicpenap.github.com/vppmap
+http://vicpenap.github.com/VPPMap

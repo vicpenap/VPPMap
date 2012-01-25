@@ -219,7 +219,7 @@
         return cust.showsDisclosureButton;
     }
     
-    return YES;
+    return self.showsDisclosureButton;
 }
 
 - (MKAnnotationView*) buildPinAnnotationViewWithAnnotation:(id<MKAnnotation>)annotation 

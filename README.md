@@ -5,7 +5,7 @@ VPPMap library for iOS simplifies the creation and management of a MKMapView. Fe
  - Automatic annotation clustering.
  - Easy management of pins dropped by user.
 
-Library is located in VPPMap/Libraries/VPPMap.
+Library is located in [VPPMap/Libraries/VPPMap](https://github.com/vicpenap/VPPMap/tree/master/VPPMap/Libraries/VPPMap).
 
 This project contains a sample application using it. Just open the project in 
 XCode, build it and run it.

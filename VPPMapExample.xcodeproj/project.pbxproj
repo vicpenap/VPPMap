@@ -150,7 +150,7 @@
 				57DE4FB414CDBCBF00B2D86B /* VPPMapHelperDelegate.h */,
 			);
 			path = VPPMap;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		57DE4FA814CDBCBF00B2D86B /* Clustering */ = {
 			isa = PBXGroup;

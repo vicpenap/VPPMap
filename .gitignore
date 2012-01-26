@@ -1,7 +1,7 @@
 .DS_Store
-VPPMap.xcodeproj/xcuserdata/
-VPPMap.xcodeproj/project.xcworkspace/xcuserdata/
+VPPMapExample.xcodeproj/xcuserdata/
+VPPMapExample.xcodeproj/project.xcworkspace/xcuserdata/
 build/
-VPPMap.xcodeproj/*.mode1v3
-VPPMap.xcodeproj/*.pbxuser
+VPPMapExample.xcodeproj/*.mode1v3
+VPPMapExample.xcodeproj/*.pbxuser
 

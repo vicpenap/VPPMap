@@ -27,14 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		57DE4F4E14CDB9D100B2D86B /* VPPMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPPMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DE4F4E14CDB9D100B2D86B /* VPPMapExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPPMapExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DE4F5214CDB9D100B2D86B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57DE4F5414CDB9D100B2D86B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57DE4F5614CDB9D100B2D86B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		57DE4F5A14CDB9D100B2D86B /* VPPMap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VPPMap-Info.plist"; sourceTree = "<group>"; };
+		57DE4F5A14CDB9D100B2D86B /* VPPMapExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VPPMapExample-Info.plist"; sourceTree = "<group>"; };
 		57DE4F5C14CDB9D100B2D86B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57DE4F5E14CDB9D100B2D86B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		57DE4F6014CDB9D100B2D86B /* VPPMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VPPMap-Prefix.pch"; sourceTree = "<group>"; };
+		57DE4F6014CDB9D100B2D86B /* VPPMapExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VPPMapExample-Prefix.pch"; sourceTree = "<group>"; };
 		57DE4F6114CDB9D100B2D86B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57DE4F6214CDB9D100B2D86B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		57DE4FA114CDBC5200B2D86B /* MapExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapExample.h; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		57DE4F4314CDB9D100B2D86B = {
 			isa = PBXGroup;
 			children = (
-				57DE4F5814CDB9D100B2D86B /* VPPMap */,
+				57DE4F5814CDB9D100B2D86B /* VPPMapExample */,
 				57DE4F5114CDB9D100B2D86B /* Frameworks */,
 				57DE4F4F14CDB9D100B2D86B /* Products */,
 			);
@@ -86,7 +86,7 @@
 		57DE4F4F14CDB9D100B2D86B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57DE4F4E14CDB9D100B2D86B /* VPPMap.app */,
+				57DE4F4E14CDB9D100B2D86B /* VPPMapExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		57DE4F5814CDB9D100B2D86B /* VPPMap */ = {
+		57DE4F5814CDB9D100B2D86B /* VPPMapExample */ = {
 			isa = PBXGroup;
 			children = (
 				57DE4FA614CDBCBF00B2D86B /* Libraries */,
@@ -116,7 +116,7 @@
 				57DE4FBB14CDBD3B00B2D86B /* MapAnnotationExample.m */,
 				57DE4F5914CDB9D100B2D86B /* Supporting Files */,
 			);
-			path = VPPMap;
+			path = VPPMapExample;
 			sourceTree = "<group>";
 		};
 		57DE4F5914CDB9D100B2D86B /* Supporting Files */ = {
@@ -124,10 +124,10 @@
 			children = (
 				57F4830014CF08A800FB433C /* bikePin.png */,
 				57F4830114CF08A800FB433C /* bikePin@2x.png */,
-				57DE4F5A14CDB9D100B2D86B /* VPPMap-Info.plist */,
+				57DE4F5A14CDB9D100B2D86B /* VPPMapExample-Info.plist */,
 				57DE4F5B14CDB9D100B2D86B /* InfoPlist.strings */,
 				57DE4F5E14CDB9D100B2D86B /* main.m */,
-				57DE4F6014CDB9D100B2D86B /* VPPMap-Prefix.pch */,
+				57DE4F6014CDB9D100B2D86B /* VPPMapExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -168,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		57DE4F4D14CDB9D100B2D86B /* VPPMap */ = {
+		57DE4F4D14CDB9D100B2D86B /* VPPMapExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57DE4F6C14CDB9D100B2D86B /* Build configuration list for PBXNativeTarget "VPPMap" */;
+			buildConfigurationList = 57DE4F6C14CDB9D100B2D86B /* Build configuration list for PBXNativeTarget "VPPMapExample" */;
 			buildPhases = (
 				57DE4F4A14CDB9D100B2D86B /* Sources */,
 				57DE4F4B14CDB9D100B2D86B /* Frameworks */,
@@ -180,9 +180,9 @@
 			);
 			dependencies = (
 			);
-			name = VPPMap;
+			name = VPPMapExample;
 			productName = VPPMap;
-			productReference = 57DE4F4E14CDB9D100B2D86B /* VPPMap.app */;
+			productReference = 57DE4F4E14CDB9D100B2D86B /* VPPMapExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +193,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 57DE4F4814CDB9D100B2D86B /* Build configuration list for PBXProject "VPPMap" */;
+			buildConfigurationList = 57DE4F4814CDB9D100B2D86B /* Build configuration list for PBXProject "VPPMapExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,7 +205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57DE4F4D14CDB9D100B2D86B /* VPPMap */,
+				57DE4F4D14CDB9D100B2D86B /* VPPMapExample */,
 			);
 		};
 /* End PBXProject section */
@@ -273,6 +273,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "VPPMapExample/VPPMapExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
@@ -290,6 +291,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "VPPMapExample/VPPMapExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -301,10 +303,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VPPMap/VPPMap-Prefix.pch";
-				INFOPLIST_FILE = "VPPMap/VPPMap-Info.plist";
+				GCC_PREFIX_HEADER = "VPPMapExample/VPPMapExample-Prefix.pch";
+				INFOPLIST_FILE = "VPPMapExample/VPPMapExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VPPMapExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -313,10 +315,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VPPMap/VPPMap-Prefix.pch";
-				INFOPLIST_FILE = "VPPMap/VPPMap-Info.plist";
+				GCC_PREFIX_HEADER = "VPPMapExample/VPPMapExample-Prefix.pch";
+				INFOPLIST_FILE = "VPPMapExample/VPPMapExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VPPMapExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -324,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57DE4F4814CDB9D100B2D86B /* Build configuration list for PBXProject "VPPMap" */ = {
+		57DE4F4814CDB9D100B2D86B /* Build configuration list for PBXProject "VPPMapExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57DE4F6A14CDB9D100B2D86B /* Debug */,
@@ -333,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57DE4F6C14CDB9D100B2D86B /* Build configuration list for PBXNativeTarget "VPPMap" */ = {
+		57DE4F6C14CDB9D100B2D86B /* Build configuration list for PBXNativeTarget "VPPMapExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57DE4F6D14CDB9D100B2D86B /* Debug */,

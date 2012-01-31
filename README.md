@@ -12,3 +12,7 @@ For full documentation check out
 http://vicpenap.github.com/VPPMap
 
 ![](https://github.com/vicpenap/VPPMap/raw/master/screenshot.png)
+
+## Changelog
+
+2012/01/31: Added method centerOnCoordinate:.

@@ -415,7 +415,21 @@
     }
 }
 
+- (void) centerOnCoordinate:(CLLocationCoordinate2D)coordinate {
+    MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
 
+    region.center = coordinate;
+    
+    if (self.mapRegionSpan.latitudeDelta != 0.0 && self.mapRegionSpan.longitudeDelta != 0.0) {
+        region.span = self.mapRegionSpan;
+    }
+    else {
+        region.span.longitudeDelta = kVPPMapHelperLongitudeDelta;
+        region.span.latitudeDelta = kVPPMapHelperLatitudeDelta;		
+    }
+    
+    [self.mapView setRegion:region animated:YES];	
+}
 
 - (void) centerMap {
 	MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
@@ -424,16 +438,8 @@
 	if (self.centersOnUserLocation) {
 		CLLocation *userLocation = self.mapView.userLocation.location;
 
-		region.center = userLocation.coordinate;
-		
-		if (self.mapRegionSpan.latitudeDelta != 0.0 && self.mapRegionSpan.longitudeDelta != 0.0) {
-			region.span = self.mapRegionSpan;
-		}
-		else {
-			region.span.longitudeDelta = kVPPMapHelperLongitudeDelta;
-			region.span.latitudeDelta = kVPPMapHelperLatitudeDelta;		
-		}
-		
+		[self centerOnCoordinate:userLocation.coordinate];
+		return;
 	}
 	
 	else if ([self.mapView.annotations count] > 1) {	

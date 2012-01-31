@@ -175,4 +175,8 @@ mapView.showsUserLocation property is independent of this one.
  */
 - (void) centerMap;
 
+/** Sets the best map region to show the indicated coordinate.
+ */
+- (void) centerOnCoordinate:(CLLocationCoordinate2D)coordinate;
+
 @end

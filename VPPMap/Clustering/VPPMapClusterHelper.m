@@ -127,7 +127,7 @@
         NSMutableArray *finalAnns = [NSMutableArray array];
         
         
-        for (id<MKAnnotation> ann in annotations) {
+        for (id<MKAnnotation> ann in [NSArray arrayWithArray:annotations]) {
             if ([processed containsObject:ann]) {
                 continue;
             }

@@ -38,6 +38,15 @@
  Using VPPMapCustomAnnotation protocol (instead of MKAnnotation protocol)
  would allow a higher annotation customization, although this is optional.
  
+ ### Extending `MKMapViewDelegate` implementation
+ VPPMap provides an implementation to the most used methods found in 
+`MKMapViewDelegate` protocol. However, you may need to implement some methods
+ not implemented by VPPMap. In this case, you have two alternatives:
+ - Create a category on VPPMapHelper and implement there all the `MKMapViewDelegate`
+ methods you need. Be careful to not implement those already implemented 
+ by VPPMapHelper.
+ - Subclass VPPMapHelper. This will be a harder alternative, but more customizable.
+ 
  @warning **Important** This library depends on MapKit framework and
  CoreLocation framework.
  */

@@ -1,4 +1,4 @@
-# VPPMap
+# VPPMap (v0.2.0)
 
 VPPMap library for iOS simplifies the creation and management of a MKMapView. Features:
  
@@ -6,6 +6,15 @@ VPPMap library for iOS simplifies the creation and management of a MKMapView. Fe
  - Map region centering based on the current visible annotations. 
  - Automatic annotation clustering.
  - Easy management of pins dropped by user.
+
+ ### Extending `MKMapViewDelegate` implementation
+ VPPMap provides an implementation to the most used methods found in 
+`MKMapViewDelegate` protocol. However, you may need to implement some methods
+ not implemented by VPPMap. In this case, you have two alternatives:
+ - Create a category on VPPMapHelper and implement there all the `MKMapViewDelegate`
+ methods you need. Be careful to not implement those already implemented 
+ by VPPMapHelper.
+ - Subclass VPPMapHelper. This will be a harder alternative, but more customizable.
 
 This project contains a sample application using it. Just open the project in 
 XCode, build it and run it.
@@ -17,7 +26,9 @@ http://vicpenap.github.com/VPPMap
 
 ## Changelog
 
-2012/01/31: Added method centerOnCoordinate:.
+2012/03/14 (v0.2.0): Fixed some bugs, added inheritance in 
+VPPMapHelperDelegate to MKMapViewDelegate and updated Documentation.
+2012/01/31 (v0.1.0): Added method centerOnCoordinate:.
 
 ## License 
 

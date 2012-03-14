@@ -8,6 +8,7 @@ VPPMap library for iOS simplifies the creation and management of a MKMapView. Fe
  - Easy management of pins dropped by user.
 
  ### Extending `MKMapViewDelegate` implementation
+
  VPPMap provides an implementation to the most used methods found in 
 `MKMapViewDelegate` protocol. However, you may need to implement some methods
  not implemented by VPPMap. In this case, you have two alternatives:
@@ -26,9 +27,9 @@ http://vicpenap.github.com/VPPMap
 
 ## Changelog
 
-2012/03/14 (v0.2.0): Fixed some bugs, added inheritance in 
+- 2012/03/14 (v0.2.0): Fixed some bugs, added inheritance in 
 VPPMapHelperDelegate to MKMapViewDelegate and updated Documentation.
-2012/01/31 (v0.1.0): Added method centerOnCoordinate:.
+- 2012/01/31 (v0.1.0): Added method centerOnCoordinate:.
 
 ## License 
 

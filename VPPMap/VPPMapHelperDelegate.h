@@ -33,7 +33,7 @@
  mapHelper update messages. */
 
 
-@protocol VPPMapHelperDelegate
+@protocol VPPMapHelperDelegate <MKMapViewDelegate>
 
 @optional
 

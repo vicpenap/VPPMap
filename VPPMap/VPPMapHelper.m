@@ -81,6 +81,7 @@
 	mapView.delegate = [mh retain];
     mh->_unfilteredPins = [[NSMutableArray alloc] init];
     mh->_currentZoom = -1;
+    mh->userCanDropPin = NO;
 	
 	// adds longpress gesture recognizer
 	UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc] 

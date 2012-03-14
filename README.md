@@ -7,7 +7,7 @@ VPPMap library for iOS simplifies the creation and management of a MKMapView. Fe
  - Automatic annotation clustering.
  - Easy management of pins dropped by user.
 
- ### Extending `MKMapViewDelegate` implementation
+### Extending MKMapViewDelegate implementation
 
  VPPMap provides an implementation to the most used methods found in 
 `MKMapViewDelegate` protocol. However, you may need to implement some methods

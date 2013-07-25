@@ -320,6 +320,9 @@
         return clusterView;
     }
     
+    if ([annotation conformsToProtocol:@protocol(VPPMapCustomAnnotation) ] && [annotation respondsToSelector:@selector(customAnnotationView)]) {
+        return [annotation performSelector:@selector(customAnnotationView)];
+    }
     
 	
     // annotation must have an image instead of pin icon

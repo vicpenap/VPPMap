@@ -65,4 +65,6 @@
 /** If set to YES, the annotation will show a disclosure button in its callout. */
 @property (nonatomic, assign) BOOL showsDisclosureButton;
 
+-(MKAnnotationView*)customAnnotationView;
+
 @end

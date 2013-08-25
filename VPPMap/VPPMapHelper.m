@@ -419,9 +419,9 @@
     
     region.center.latitude = (minLatitude + maxLatitude) / 2.0;
     region.center.longitude = (minLongitude	+ maxLongitude) / 2.0;
-    region.span.latitudeDelta = dist / 111319.5; // magic number !! :)
+    region.span.latitudeDelta = dist / 111319.5 +0.01; // magic number !! :)
     // explanation here: http://developer.apple.com/library/ios/#documentation/MapKit/Reference/MapKitDataTypesReference/Reference/reference.html
-    region.span.longitudeDelta = 0.0;
+    region.span.longitudeDelta = 0.01;
     
     return region;
     

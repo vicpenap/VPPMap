@@ -54,4 +54,6 @@
  Otherwise return NO. */
 - (BOOL) annotationDroppedByUserShouldOpen:(id<MKAnnotation>)annotation;
 
+- (void) annotationViewDidSelected:(MKAnnotationView*)view;
+
 @end

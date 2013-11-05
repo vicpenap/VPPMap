@@ -427,6 +427,18 @@
     
 }
 
+-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+	if ([view.annotation isKindOfClass:[MKUserLocation class]]) {
+		return;
+	}
+    
+    if (![view.annotation isKindOfClass:[VPPMapCluster class]]) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(annotationViewDidSelected:)]) {
+            [self.delegate annotationViewDidSelected:view];
+        }
+    }
+}
+
 #pragma mark - Centering map stuff
 
 - (void)observeValueForKeyPath:(NSString *)keyPath  

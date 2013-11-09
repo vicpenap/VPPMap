@@ -52,7 +52,7 @@
 @synthesize pinDroppedByUserClass;
 @synthesize shouldClusterPins;
 @synthesize distanceBetweenPins;
-
+@synthesize shouldCenterMapAfterNewPins;
 
 
 #pragma mark -
@@ -82,7 +82,8 @@
     mh->_unfilteredPins = [[NSMutableArray alloc] init];
     mh->_currentZoom = -1;
     mh->userCanDropPin = NO;
-	
+	mh->shouldCenterMapAfterNewPins = YES;
+    
 	// adds longpress gesture recognizer
 	UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc] 
 										  initWithTarget:mh action:@selector(handleLongPress:)];
@@ -519,6 +520,10 @@
 }
 
 - (void) mapView:(MKMapView *)mmapView regionDidChangeAnimated:(BOOL)animated {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(mapView:regionDidChangeAnimated:)]) {
+        [self.delegate mapView:mmapView regionDidChangeAnimated:animated];
+    }
+    
     if (self.shouldClusterPins && [_unfilteredPins count] != 0 && [self mapViewDidZoom:mmapView]) {
         VPPMapClusterHelper *mh = [[VPPMapClusterHelper alloc] initWithMapView:self.mapView];
         [mh clustersForAnnotations:_unfilteredPins distance:self.distanceBetweenPins completion:^(NSArray *data) {
@@ -543,12 +548,14 @@
 	
 	[self addMapAnnotations:mapAnnotations];
 	
-    if (self.shouldClusterPins) {
-        [_unfilteredPins removeAllObjects];
-        [self.mapView setRegion:[self regionAccordingToAnnotations:mapAnnotations] animated:YES];	
-    }
-    else {
-        [self centerMap];
+    if (self.shouldCenterMapAfterNewPins) {
+        if (self.shouldClusterPins) {
+            [_unfilteredPins removeAllObjects];
+            [self.mapView setRegion:[self regionAccordingToAnnotations:mapAnnotations] animated:YES];
+        }
+        else {
+            [self centerMap];
+        }
     }
 }
 

@@ -56,4 +56,6 @@
 
 - (void) annotationViewDidSelected:(MKAnnotationView*)view;
 
+- (void) mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated;
+
 @end

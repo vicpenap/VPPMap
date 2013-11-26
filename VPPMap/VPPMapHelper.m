@@ -546,6 +546,7 @@
 	NSArray *annotations = [NSArray arrayWithArray:self.mapView.annotations];
 	[self.mapView removeAnnotations:annotations];
 	
+    [_unfilteredPins removeAllObjects];
 	[self addMapAnnotations:mapAnnotations];
 	
     if (self.shouldCenterMapAfterNewPins) {
@@ -565,7 +566,7 @@
     if (self.shouldClusterPins) {
         VPPMapClusterHelper *mh = [[VPPMapClusterHelper alloc] initWithMapView:self.mapView];
         [mh clustersForAnnotations:mapAnnotations distance:self.distanceBetweenPins completion:^(NSArray *data) {
-            [_unfilteredPins addObjectsFromArray:mapAnnotations];            
+            [_unfilteredPins addObjectsFromArray:mapAnnotations];
             [self.mapView addAnnotations:data];
         }];
         [mh release];

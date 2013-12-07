@@ -31,6 +31,7 @@
 #import "VPPMapCluster.h"
 #import "VPPMapClusterHelper.h"
 #import "VPPMapClusterView.h"
+#import "MapAnnotation.h"
 
 #define kVPPMapHelperOpenAnnotationDelay 0.65
 
@@ -315,7 +316,19 @@
             clusterView = [[[VPPMapClusterView alloc] initWithAnnotation:annotation reuseIdentifier:@"cluster"] autorelease];            
         }
         
-        clusterView.title = [NSString stringWithFormat:@"%d",[[(VPPMapCluster*)annotation annotations] count]];
+        if ([annotation isKindOfClass:[VPPMapCluster class]]) {
+            NSInteger countBetheres = 0;
+            for (MapAnnotation *annot in [(VPPMapCluster*)annotation annotations] ) {
+                if (annot.place) {
+                    NSLog(@"%d",annot.place.betheresCount);
+                    countBetheres += annot.place.betheresCount;
+                }
+            }
+            [clusterView updateCountLabel:[NSString stringWithFormat:@"%d",countBetheres]];
+            NSLog(@"--%d",countBetheres   );
+        }
+
+        
         clusterView.canShowCallout = NO;
         
         return clusterView;

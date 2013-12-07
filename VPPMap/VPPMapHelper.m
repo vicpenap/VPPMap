@@ -320,12 +320,10 @@
             NSInteger countBetheres = 0;
             for (MapAnnotation *annot in [(VPPMapCluster*)annotation annotations] ) {
                 if (annot.place) {
-                    NSLog(@"%d",annot.place.betheresCount);
                     countBetheres += annot.place.betheresCount;
                 }
             }
             [clusterView updateCountLabel:[NSString stringWithFormat:@"%d",countBetheres]];
-            NSLog(@"--%d",countBetheres   );
         }
 
         

@@ -56,6 +56,10 @@
 
 - (void) annotationViewDidSelected:(MKAnnotationView*)view;
 
+//MKMapViewDelegate
+
 - (void) mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated;
+
+- (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation;
 
 @end

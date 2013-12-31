@@ -549,6 +549,12 @@
     }
 }
 
+-(void)mapView:(MKMapView *)mapV didUpdateUserLocation:(MKUserLocation *)userLocation{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(mapView:didUpdateUserLocation:)]) {
+        [self.delegate mapView:mapV didUpdateUserLocation:userLocation];
+    }
+}
+
 #pragma mark - Managing annotations
 // sets all annotations and initializes map.
 

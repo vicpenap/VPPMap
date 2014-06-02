@@ -44,7 +44,7 @@
         _label.textColor = [UIColor whiteColor];
         _label.backgroundColor = [UIColor grayColor];
         _label.font = [UIFont boldSystemFontOfSize:11]; 
-        _label.textAlignment = UITextAlignmentCenter;
+        _label.textAlignment = NSTextAlignmentCenter;
         _label.shadowColor = [UIColor blackColor];
         _label.shadowOffset = CGSizeMake(0,-1);
         _label.layer.cornerRadius = 10;
@@ -59,6 +59,7 @@
     if (_label != nil) {
         [_label release];
     }
+    [super dealloc];
 }
 
 - (void) setTitle:(NSString *)title {

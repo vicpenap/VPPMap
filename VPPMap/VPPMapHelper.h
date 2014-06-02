@@ -132,7 +132,7 @@
 /** Indicates distance between pins to cluster them. */
 @property (nonatomic, assign) float distanceBetweenPins;
 
-
+@property (nonatomic, assign) BOOL shouldCenterMapAfterNewPins;
 
 
 /** ---

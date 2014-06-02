@@ -31,6 +31,7 @@
 #import "VPPMapCluster.h"
 #import "VPPMapClusterHelper.h"
 #import "VPPMapClusterView.h"
+#import "MapAnnotation.h"
 
 #define kVPPMapHelperOpenAnnotationDelay 0.65
 
@@ -52,7 +53,7 @@
 @synthesize pinDroppedByUserClass;
 @synthesize shouldClusterPins;
 @synthesize distanceBetweenPins;
-
+@synthesize shouldCenterMapAfterNewPins;
 
 
 #pragma mark -
@@ -82,7 +83,8 @@
     mh->_unfilteredPins = [[NSMutableArray alloc] init];
     mh->_currentZoom = -1;
     mh->userCanDropPin = NO;
-	
+	mh->shouldCenterMapAfterNewPins = YES;
+    
 	// adds longpress gesture recognizer
 	UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc] 
 										  initWithTarget:mh action:@selector(handleLongPress:)];
@@ -314,12 +316,25 @@
             clusterView = [[[VPPMapClusterView alloc] initWithAnnotation:annotation reuseIdentifier:@"cluster"] autorelease];            
         }
         
-        clusterView.title = [NSString stringWithFormat:@"%d",[[(VPPMapCluster*)annotation annotations] count]];
+        if ([annotation isKindOfClass:[VPPMapCluster class]]) {
+            NSInteger countBetheres = 0;
+            for (MapAnnotation *annot in [(VPPMapCluster*)annotation annotations] ) {
+                if (annot.place) {
+                    countBetheres += annot.place.betheresCount;
+                }
+            }
+            [clusterView updateCountLabel:[NSString stringWithFormat:@"%d",countBetheres]];
+        }
+
+        
         clusterView.canShowCallout = NO;
         
         return clusterView;
     }
     
+    if ([annotation conformsToProtocol:@protocol(VPPMapCustomAnnotation) ] && [annotation respondsToSelector:@selector(customAnnotationView)]) {
+        return [annotation performSelector:@selector(customAnnotationView)];
+    }
     
 	
     // annotation must have an image instead of pin icon
@@ -416,12 +431,24 @@
     
     region.center.latitude = (minLatitude + maxLatitude) / 2.0;
     region.center.longitude = (minLongitude	+ maxLongitude) / 2.0;
-    region.span.latitudeDelta = dist / 111319.5; // magic number !! :)
+    region.span.latitudeDelta = dist / 111319.5 +0.01; // magic number !! :)
     // explanation here: http://developer.apple.com/library/ios/#documentation/MapKit/Reference/MapKitDataTypesReference/Reference/reference.html
-    region.span.longitudeDelta = 0.0;
+    region.span.longitudeDelta = 0.01;
     
     return region;
     
+}
+
+-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+	if ([view.annotation isKindOfClass:[MKUserLocation class]]) {
+		return;
+	}
+    
+    if (![view.annotation isKindOfClass:[VPPMapCluster class]]) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(annotationViewDidSelected:)]) {
+            [self.delegate annotationViewDidSelected:view];
+        }
+    }
 }
 
 #pragma mark - Centering map stuff
@@ -504,6 +531,10 @@
 }
 
 - (void) mapView:(MKMapView *)mmapView regionDidChangeAnimated:(BOOL)animated {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(mapView:regionDidChangeAnimated:)]) {
+        [self.delegate mapView:mmapView regionDidChangeAnimated:animated];
+    }
+    
     if (self.shouldClusterPins && [_unfilteredPins count] != 0 && [self mapViewDidZoom:mmapView]) {
         VPPMapClusterHelper *mh = [[VPPMapClusterHelper alloc] initWithMapView:self.mapView];
         [mh clustersForAnnotations:_unfilteredPins distance:self.distanceBetweenPins completion:^(NSArray *data) {
@@ -518,6 +549,12 @@
     }
 }
 
+-(void)mapView:(MKMapView *)mapV didUpdateUserLocation:(MKUserLocation *)userLocation{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(mapView:didUpdateUserLocation:)]) {
+        [self.delegate mapView:mapV didUpdateUserLocation:userLocation];
+    }
+}
+
 #pragma mark - Managing annotations
 // sets all annotations and initializes map.
 
@@ -526,14 +563,17 @@
 	NSArray *annotations = [NSArray arrayWithArray:self.mapView.annotations];
 	[self.mapView removeAnnotations:annotations];
 	
+    [_unfilteredPins removeAllObjects];
 	[self addMapAnnotations:mapAnnotations];
 	
-    if (self.shouldClusterPins) {
-        [_unfilteredPins removeAllObjects];
-        [self.mapView setRegion:[self regionAccordingToAnnotations:mapAnnotations] animated:YES];	
-    }
-    else {
-        [self centerMap];
+    if (self.shouldCenterMapAfterNewPins) {
+        if (self.shouldClusterPins) {
+            [_unfilteredPins removeAllObjects];
+            [self.mapView setRegion:[self regionAccordingToAnnotations:mapAnnotations] animated:YES];
+        }
+        else {
+            [self centerMap];
+        }
     }
 }
 
@@ -543,7 +583,7 @@
     if (self.shouldClusterPins) {
         VPPMapClusterHelper *mh = [[VPPMapClusterHelper alloc] initWithMapView:self.mapView];
         [mh clustersForAnnotations:mapAnnotations distance:self.distanceBetweenPins completion:^(NSArray *data) {
-            [_unfilteredPins addObjectsFromArray:mapAnnotations];            
+            [_unfilteredPins addObjectsFromArray:mapAnnotations];
             [self.mapView addAnnotations:data];
         }];
         [mh release];
